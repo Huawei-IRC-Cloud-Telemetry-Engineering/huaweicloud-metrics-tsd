@@ -8,23 +8,23 @@ Anomaly detection in cloud infrastructure faces significant challenges due to th
 
 **Dataset Folder Structure**
 
-Dataset/< br / >
-├── test/                  # Testing data (1 week)< br / >
-│   ├── carts/             # Metrics for the carts service< br / >
-│   │   ├── carts-2024-12-22-23.tar.gz< br / >
-│   │   ├── carts-2024-12-23-00.tar.gz< br / >
-│   │   └── ...< br / >
-│   ├── catalogue/         # Metrics for the catalogue service< br / >
-│   ├── ...                # Additional services< br / >
-│   └── user/              # Metrics for the user service< br / >
-│       ├── user-2024-12-22-23.tar.gz< br / >
-│       ├── user-2024-12-23-00.tar.gz< br / >
-│       └── ...< br / >
-└── train/                 # Training data (4 weeks)< br / >
-    ├── carts/             # Metrics for the carts service< br / >
-    ├── catalogue/         # Metrics for the catalogue service< br / >
-    ├── ...                # Additional services< br / >
-    └── user/              # Metrics for the user service< br / >
+Dataset/`<br>`
+├── test/ # Testing data (1 week) `<br>`
+│ ├── carts/ # Metrics for the carts service `<br>`
+│ │ ├── carts-2024-12-22-23.tar.gz `<br>`
+│ │ ├── carts-2024-12-23-00.tar.gz `<br>`
+│ │ └── ...`<br>`
+│ ├── catalogue/ # Metrics for the catalogue service `<br>`
+│ ├── ... # Additional services `<br>`
+│ └── user/ # Metrics for the user service `<br>`
+│ ├── user-2024-12-22-23.tar.gz `<br>`
+│ ├── user-2024-12-23-00.tar.gz `<br>`
+│ └── ...`<br>`
+└── train/ # Training data (4 weeks)`<br>`
+├── carts/ # Metrics for the carts service `<br>`
+├── catalogue/ # Metrics for the catalogue service `<br>`
+├── ... # Additional services `<br>`
+└── user/ # Metrics for the user service `<br>`
 
 Each service directory contains compressed files (`*.gz`) with hourly metric data. Files follow the format `service_name-` and contain CSV-formatted time series with timestamps and metric values.
 
